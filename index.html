@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windxp To-Do List</title>
+    <link rel="icon" type="image/x-icon" href="/img/xplog.png">
+
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="tasks-container" id="tasks-container">
+        <div class="header" id="tasks-header">
+            <div class="title">Todo List</div>
+            <div class="btns">
+          <div class="btn1">-</div>
+          <div class="btn2">X</div>
+        </div>
+        </div>
+        <div class="content">
+          <div id="filters">
+            <input type="text" id="search" placeholder="Search tasks" />
+
+            <button id="all">All</button>
+            <button id="completed">Completed</button>
+            <button id="not-completed">Not Completed</button>
+          </div>
+        </div>
+        <ul id="todo-list"></ul>
+      </div>
+      <div class="form-container" id="form-container">
+        <div class="header" id="form-header">
+            <div class="title">Todo List</div>
+            <div class="btns">
+          <div class="btn1">-</div>
+          <div class="btn2">X</div>
+        </div>
+        </div>
+        <div class="content">
+          <form id="todo-form">
+            <input
+              type="text"
+              id="todo-input"
+              placeholder="Add a new task"
+              required
+            />
+            <button type="submit">Add Task</button>
+          </form>
+        </div>
+      </div>
+
+        <div class="tachebar">
+            <div class="start">
+                <img src="/img/xplog.png" alt="" />
+                <span>start</span>
+            </div>
+
+            <div class="infos">
+                <span id="country"></span>
+                <span id="date"></span>
+                <span id="time"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
